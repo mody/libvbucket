@@ -20,7 +20,7 @@ AC_INIT(libvbucket, VERSION_NUMBER, support@couchbase.com)
 AC_CONFIG_SRCDIR([src/vbucket.c])
 AC_CONFIG_AUX_DIR(config)
 AC_USE_SYSTEM_EXTENSIONS
-AM_INIT_AUTOMAKE(subdir-objects)
+AM_INIT_AUTOMAKE([subdir-objects foreign])
 AC_PROG_CC
 AM_PROG_CC_C_O
 AC_DISABLE_STATIC

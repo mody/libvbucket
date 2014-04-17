@@ -1,0 +1,48 @@
+Source: libvbucket
+Maintainer: Couchbase SDK Team <support@couchbase.com>
+Section: libs
+Priority: optional
+Build-Depends: debhelper (>= 8),
+ autoconf,
+ automake,
+ autotools-dev,
+ cmake,
+ dh-autoreconf,
+ libtool,
+Standards-Version: 3.9.2
+Homepage: http://www.couchbase.com/develop/c/current
+Vcs-Browser: https://github.com/couchbase/libvbucket
+Vcs-Git: git://github.com/couchbase/libvbucket.git
+
+Package: libvbucket1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Section: libs
+Priority: optional
+Description: vbucket library for Couchbase
+ libvbucket is a library providing vbucket distribution layer for Couchbase
+ clients.
+ .
+ This package provides vbucket support for Couchbase.
+
+Package: libvbucket-dev
+Architecture: any
+Depends: libvbucket1 (= ${binary:Version}), ${misc:Depends}
+Section: libdevel
+Priority: optional
+Description: vbucket library for Couchbase, development files
+ libvbucket is a library providing vbucket distribution layer for Couchbase
+ clients.
+ .
+ This package provides files needed for development with libvucket.
+
+Package: libvbucket1-dbg
+Architecture: any
+Depends: libvbucket1 (= ${binary:Version}), ${misc:Depends}
+Section: debug
+Priority: extra
+Description: vbucket library for Couchbase, development files
+ libvbucket is a library providing vbucket distribution layer for Couchbase
+ clients.
+ .
+ This package provides debugging symbols.

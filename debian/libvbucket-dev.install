@@ -1,0 +1,4 @@
+usr/include/libvbucket
+usr/lib/libvbucket.la
+usr/lib/libvbucket.so
+usr/lib/pkgconfig
